@@ -1,4 +1,4 @@
-serverbackup
+backup scripts
 ============
 
-script to backup server files and upload to amazon
+scripts to backup server files and upload to amazon
