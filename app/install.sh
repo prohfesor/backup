@@ -2,4 +2,4 @@
 curl -sS https://getcomposer.org/installer | php
 
 #get dependencies
-composer.phar update
+php composer.phar update
