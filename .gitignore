@@ -1,9 +1,3 @@
-<<<<<<< HEAD
 vendor/*
 composer.lock
 composer.phar
-=======
-app/vendor/*
-app/composer.lock
-app/composer.phar
->>>>>>> 9221c0e20b85a5daad21a08754fb035d63718e2f
