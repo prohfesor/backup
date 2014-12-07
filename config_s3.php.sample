@@ -1,0 +1,7 @@
+<?php
+
+use Aws\Common\Enum\Region;
+
+$config_s3_key = "xxxxxxxxxxxxxxx";
+$config_s3_secret = "xxxxxxxxxxxxx";
+$config_s3_region =  Region::IRELAND;
