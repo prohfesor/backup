@@ -9,7 +9,6 @@ use Aws\Common\Enum\Region;
 use Aws\Common\Enum\Size;
 
 
-$bucket_name = 'eruptive';
 $folder = '/home/prohfesor/backup';
 
 // Instantiate the s3 client with your AWS credentials
@@ -41,7 +40,7 @@ foreach ($aList as $file) {
 	$uploader = UploadBuilder::newInstance()
 	    ->setClient($client)
 	    ->setSource($filename)
-	    ->setBucket($bucket_name)
+	    ->setBucket($config_s3_bucket)
 	    ->setKey('backup_'.$prefix.'_'.basename($filename))
 	    ->setMinPartSize(100 * Size::MB)
 	    //->setOption('Expires', time() + 7*24*60*60)
