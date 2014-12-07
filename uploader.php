@@ -13,10 +13,11 @@ $bucket_name = 'eruptive';
 $folder = '/home/prohfesor/backup';
 
 // Instantiate the s3 client with your AWS credentials
+require_once 'config_s3.php';
 $client = \Aws\S3\S3Client::factory(array(
-  'key'    => 'AKIAIIMYL2Y4MKLJXJYQ',
-  'secret' => 'a7+Qedry3jDCy9Wyak39+XDoVBWBhdijEzsMA75h',
-  'region' => Region::IRELAND
+  'key'    => $config_s3_key,
+  'secret' => $config_s3_secret,
+  'region' => $config_s3_region
 ));
 
 
