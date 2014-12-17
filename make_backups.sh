@@ -29,5 +29,5 @@ do
 	echo " Backing up $BACKUPFILE"
 	#zip -rq $BACKUPFILE $i/
 	#if you have 32bit system, then php uploader will not be able to upload, use next line instead:
-	zip -rq $BACKUPFILE $i/ -s=2000Mb
+	zip -rq $BACKUPFILE $i/ -s=2000M
 done
